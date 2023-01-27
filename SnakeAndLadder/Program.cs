@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Snake And Ladder Program");
-            Console.ReadLine();
+            // Acessing StartGame method from SnakeLadder Class
+            SnakeLadder.StartGame();
         }
     }
 }

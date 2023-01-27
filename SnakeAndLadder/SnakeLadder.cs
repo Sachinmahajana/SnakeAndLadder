@@ -12,7 +12,15 @@ namespace SnakeAndLadder
         {   // UC1 Single player at 0 Position
             int position = 0;
             Console.WriteLine("Player is at {0}.",  position);
+            // UC2 - The Player rolls the die to get a number between 1 to 6.
+            Random random = new Random();
+            int die = random.Next(1, 7);
+            position = position + die;
+            Console.WriteLine("You Got : " + die);
+            Console.WriteLine("Player position at : " + position);
         }
-        
     }
 }
+
+
+        
